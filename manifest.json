@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "BackgroundChanger",
+    "description": "Add a custom background to Any Website",
+    "version": "1.0",
+    "icons": {
+        "16": "/Images/aj7nh-dkksy-001.png",
+        "48": "/Images/aj7nh-dkksy-002.png",
+        "128": "/Images/aj7nh-dkksy-003.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/Images/aowi1-3m671-001.png",
+            "48": "/Images/aowi1-3m671-002.png",
+            "128": "/Images/aowi1-3m671-003.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*","https://www.google.co.in/*"],
+        "css": ["main.css"]
+    }]
+}
